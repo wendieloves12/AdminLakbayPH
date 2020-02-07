@@ -1,0 +1,191 @@
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8" />
+        <link rel="apple-touch-icon" sizes="76x76" href="adminassets/img/apple-icon.png">
+        <link rel="icon" type="image/png" href="adminassets/img/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>AVG Travel and Tours</title>
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+         
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+        <!-- CSS Files -->
+        <link href="adminassets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="adminassets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" /> 
+        <link href="adminassets/css/demo.css" rel="stylesheet" />
+    </head>
+	<body>
+        <div class="wrapper">
+            <div class="sidebar" data-image="adminassets/img/sidebar-5.jpg" data-color="blue">
+                <div class="sidebar-wrapper">
+                    <div class="logo">
+                        <a href="" class="simple-text">
+                            AVG Travel and Tours
+                        </a>
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <a class="nav-link" href="AVGdash.html">
+                                <i class="nc-icon nc-chart-pie-35"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="userProf.html">
+                                <i class="nc-icon nc-circle-09"></i>
+                                <p>Booking List</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="readItems.html">
+                                <i class="nc-icon nc-notes"></i>
+                                <p>Item List</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-panel">
+                <nav class="navbar navbar-expand-lg " color-on-scroll="500">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" > Add Items </a>
+                        <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-bar burger-lines"></span>
+                            <span class="navbar-toggler-bar burger-lines"></span>
+                            <span class="navbar-toggler-bar burger-lines"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                            <ul class="nav navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-toggle="dropdown"> 
+                                        <span class="d-lg-none">Dashboard</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#logout">
+                                        <span class="no-icon">Log out</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Add Items</h4>
+                                        <p class="card-category">Manually add items</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-5 pr-1">
+                                                    <div class="form-group">
+                                                        <label>User ID</label>
+                                                        <input type="text" disabled class="form-control" name="userId" id="userId" placeholder="User ID is auto generated"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                
+                                            <div class="row">
+                                                <div class="col-md-6 pr-1">
+                                                    <div class="form-group">
+                                                        <label>Title</label>
+                                                        <input type="text" class="form-control" name="title" id="title" placeholder="Title" required/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Description</label>
+                                                        <input type="text" class="form-control" name="description" id="description" placeholder="Description"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-md-6 pr-1">
+                                                    <div class="form-group">
+                                                        <label>Image Url</label>
+                                                        <input type="text" class="form-control" name="imageUrl" id="imageUrl" placeholder="imageUrl"/> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 px-1">
+                                                    <div class="form-group">
+                                                        <label>Price</label>
+                                                            <input type="number" class="form-control" name="price" id="price" placeholder="Price"/> 
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                             <!--   <button type="submit" class="btn btn-info btn-fill pull-right" style=" margin-left:6px" href="./dashboard.html">Back to Dashboard</button> -->
+                                            <button type="button" id="addBtn" class="btn btn-info btn-fill pull-right" >Add Item</button>
+        
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav>
+                    <p class="copyright text-center">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="">AVG Travel and Tours</a>, CpE
+                    </p>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+    <script>
+     // Your web app's Firebase configuration
+     var firebaseConfig = {
+        apiKey: "AIzaSyAzUmniefdVZKBRKHyA7HVX21y6RVDEZDU",
+        authDomain: "lakbayph-88c82.firebaseapp.com",
+        databaseURL: "https://lakbayph-88c82.firebaseio.com",
+        projectId: "lakbayph-88c82",
+        storageBucket: "lakbayph-88c82.appspot.com",
+        messagingSenderId: "111285542831",
+        appId: "1:111285542831:web:d0cd6b5575cd10d559595a",
+        measurementId: "G-C5C9NPKJR0"
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+    <script src="crud_js/addItem.js"></script>
+
+    </body>
+
+    <script src="adminassets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+    <script src="adminassets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="adminassets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="adminassets/js/plugins/bootstrap-switch.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <script src="adminassets/js/plugins/chartist.min.js"></script>
+    <script src="adminassets/js/plugins/bootstrap-notify.js"></script>
+    <script src="adminassets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+    <script src="adminassets/js/demo.js"></script>
+
+</html>
